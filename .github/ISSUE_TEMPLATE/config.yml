@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Official Gemini in Chrome docs
+    url: https://support.google.com/chrome/answer/16283624
+    about: Google's requirements for the Gemini in Chrome sidebar (region, language, account).

@@ -1,0 +1,54 @@
+name: Bug report
+description: Something didn't work as expected
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report! Please include the diagnostic output so the region
+        seed issue can be confirmed quickly.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what actually happened?
+      placeholder: After running the script and reopening Chrome, the Ask Gemini button still…
+    validations:
+      required: true
+  - type: input
+    id: chrome-version
+    attributes:
+      label: Chrome version
+      description: From chrome://settings/help
+      placeholder: "148.0.7778.216"
+    validations:
+      required: true
+  - type: textarea
+    id: check-output
+    attributes:
+      label: Output of `--check`
+      description: Run `bash scripts/fix-chrome-gemini-region.sh --check` and paste the result. This is read-only and safe.
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: prereqs
+    attributes:
+      label: Which prerequisites are met?
+      description: Region is only the last mile — these must also hold.
+      multiple: true
+      options:
+        - Chrome is up to date
+        - Display language is English (United States)
+        - Network/proxy is on a US node
+        - Signed in to Chrome, not incognito
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Other details, screenshots, or context.
+    validations:
+      required: false
