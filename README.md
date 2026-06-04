@@ -1,5 +1,9 @@
 # chrome-gemini-button-restore
 
+[![ShellCheck](https://github.com/jnqqls/chrome-gemini-button-restore/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/jnqqls/chrome-gemini-button-restore/actions/workflows/shellcheck.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Platform: macOS](https://img.shields.io/badge/platform-macOS-lightgrey.svg)
+
 Restore the **Ask Gemini** / *Gemini in Chrome* sidebar button that disappears
 after a Chrome update on macOS.
 
